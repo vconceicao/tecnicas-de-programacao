@@ -4,14 +4,14 @@ import java.time.LocalDate;
 import java.util.StringJoiner;
 
 public class Funcionario {
-    private final Integer id;
-    private final String nome;
-    private final String sexo;
-    private final LocalDate dataNascimento;
-    private final String cidade;
-    private final String cargo;
-    private final LocalDate dataAdmissao;
-    private final Double salario;
+    private  Integer id;
+    private  String nome;
+    private  String sexo;
+    private  LocalDate dataNascimento;
+    private  String cidade;
+    private  String cargo;
+    private  LocalDate dataAdmissao;
+    private  Double salario;
 
     public Funcionario(Integer id, String nome, String sexo, LocalDate dataNascimento, String cidade, String cargo, LocalDate dataAdmissao, Double salario) {
         this.id = id;
@@ -22,6 +22,10 @@ public class Funcionario {
         this.cargo = cargo;
         this.dataAdmissao = dataAdmissao;
         this.salario = salario;
+    }
+
+
+    public Funcionario() {
     }
 
     public Integer getId() {
