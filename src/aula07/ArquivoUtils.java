@@ -24,7 +24,7 @@ public class ArquivoUtils {
     }
 
     public static Optional<List<Funcionario>> getListaFuncionarios() {
-        Path path = Paths.get("employee.csv");
+        Path path = Paths.get("funcionarios.csv");
         try {
             Stream<String> lines = Files.lines(path);
             List<String> collect = lines.collect(Collectors.toList());
